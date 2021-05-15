@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind screens;
+@import colors.css
+@layer base {
+    @font-face {
+      font-family: Proxima Nova;
+      font-weight: 400;
+      src: url(/fonts/proxima-nova/400-regular.woff) format("woff");
+    }
+    @font-face {
+      font-family: Proxima Nova;
+      font-weight: 500;
+      src: url(/fonts/proxima-nova/500-medium.woff) format("woff");
+    }
+    h1 {
+      @apply text-2xl;
+    }
+    h2 {
+      @apply text-xl;
+    }
+  }
+  
+  @layer components {
+    .btn-blue {
+      @apply px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700;
+    }
+  }
+  
+  @layer utilities {
+    @variants hover, focus {
+      .filter-none {
+        filter: none;
+      }
+      .filter-grayscale {
+        filter: grayscale(100%);
+      }
+    }
+  }
+
+@responsive {
+    .oakwavegradient {
+        @apply bg-gradient-to-r from-purple-500 via-blue-500 to-purple-500;
+    }
+  }

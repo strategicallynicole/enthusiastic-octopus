@@ -1,0 +1,5 @@
+
+    .oakwavegradient {
+        @apply bg-gradient-to-br from-purple-500 via-blue-500 to-purple-500;
+    }
+  
